@@ -8,6 +8,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
 
+  --hover-text-color: #ffffff;
+  --hover-block-color: #f8bc61;
   --primary-text-color: #181820;
   --secondary-text-color: #5c5c62;
   --durability-text-color: #6a737d9c;
@@ -77,6 +79,7 @@ body {
   margin-bottom: 15px;
   text-decoration-color: var(--text-decoration-color);
   text-decoration-line: underline;
+  -moz-text-decoration-color: var(--text-decoration-color);
 }
 
 .contact-info__sub-header {
@@ -99,6 +102,24 @@ body {
   text-decoration: none;
   display: flex;
   justify-content: start;
+  padding: 7px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  transition: color 0.3s, background-color 0.5s, box-shadow 0.5s;
+  -webkit-transition: color 0.3s, background-color 0.5s, box-shadow 0.5s;
+  -moz-transition: color 0.3s, background-color 0.5s, box-shadow 0.5s;
+  -ms-transition: color 0.3s, background-color 0.5s, box-shadow 0.5s;
+  -o-transition: color 0.3s, background-color 0.5s, box-shadow 0.5s;
+}
+
+.contact-info__item:hover {
+  color: var(--hover-text-color);
+  background-color: var(--hover-block-color);
+  text-decoration: none;
+  box-shadow: 0px 0px 10px var(--text-decoration-color);
 }
 
 .contact-info__item:not(:last-child) {
@@ -122,12 +143,30 @@ body {
 }
 
 .contact-info__avatar {
+  z-index: 5;
   border-radius: 50%;
   width: 150px;
   height: 150px;
   object-fit: cover;
   border: 3px solid;
   border-color: var(--text-decoration-color);
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+}
+
+.contact-info__avatar:hover {
+  opacity: 0;
+}
+.contact-info__peace {
+  position: absolute;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid;
 }
 .intro {
   display: flex;
