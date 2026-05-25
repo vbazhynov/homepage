@@ -66,11 +66,39 @@
               </div>
 
               <div class="contact-info__block contact-info__block--center">
-                <img
-                  class="contact-info__avatar"
-                  src="assets/avatar.png"
-                  alt="Avatar"
+                <label
+                  for="contact-info__avatar-toggle"
+                  class="contact-info__avatar-trigger"
+                >
+                  <img
+                    class="contact-info__avatar"
+                    src="assets/avatar.png"
+                    alt="Avatar"
+                  />
+                </label>
+                <input
+                  type="checkbox"
+                  id="contact-info__avatar-toggle"
+                  class="contact-info__modal-checkbox"
                 />
+                <div class="contact-info__modal-overlay">
+                  <div class="contact-info__modal-content">
+                    <label
+                      for="contact-info__avatar-toggle"
+                      class="contact-info__modal-close"
+                      >&times;</label
+                    >
+
+                    <img
+                      src="assets/avatar_large.png"
+                      alt="T-short"
+                      class="contact-info__avatar-large"
+                    />
+                    <h3 class="contact-info__avatar-large-text">
+                      Таки так, це ваша футболка, досі жива!!!
+                    </h3>
+                  </div>
+                </div>
               </div>
 
               <div class="contact-info__block">
