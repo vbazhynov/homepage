@@ -164,9 +164,17 @@ body {
 
 .skills__text {
   color: var(--secondary-text-color);
-  text-align: justify;
+  display: flex;
 }
 
+.skills {
+  margin: 0 5% 0 5%;
+}
+.skill__el-header {
+  text-decoration-color: var(--text-decoration-color);
+  text-decoration-line: underline;
+  margin-bottom: 10px;
+}
 .experiences {
   flex: 1 1 60%;
   margin-right: 50px;
@@ -176,6 +184,16 @@ body {
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
+  text-decoration-color: var(--text-decoration-color);
+  text-decoration-line: underline;
+}
+.st0 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #d8453e;
+}
+.st1 {
+  fill: #393939;
 }
 
 .experiences__company-header-durability {
@@ -187,8 +205,6 @@ body {
 
 .experiences__company-header-name {
   color: var(--primary-text-color);
-  text-decoration-color: var(--text-decoration-color);
-  text-decoration-line: underline;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -215,6 +231,9 @@ body {
   color: var(--secondary-text-color);
   padding-left: 20px;
 }
+.experiences__company-project-icon {
+  margin-left: 10%;
+}
 
 .additional-info {
   flex: 1 1 40%;
@@ -228,6 +247,8 @@ body {
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
+  text-decoration-color: var(--text-decoration-color);
+  text-decoration-line: underline;
 }
 
 .additional-info__education-university-durability {
@@ -245,6 +266,7 @@ body {
 
 .additional-info__education-university-name {
   color: var(--secondary-text-color);
+  margin-bottom: 15px;
 }
 
 .additional-info__languages {
@@ -255,8 +277,33 @@ body {
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
+  text-decoration-color: var(--text-decoration-color);
+  text-decoration-line: underline;
 }
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+.additional-info__bott {
+  height: 100%;
+}
+
+.additional-info__others-header {
+  color: var(--secondary-text-color);
+  text-align: left;
+  margin-bottom: 20px;
+  text-decoration-color: var(--text-decoration-color);
+  text-decoration-line: underline;
+}
+
+.additional-info__others-activity {
+  color: var(--primary-text-color);
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.additional-info__others-type {
+  color: var(--secondary-text-color);
+  margin-bottom: 15px;
 }
