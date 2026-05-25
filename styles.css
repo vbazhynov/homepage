@@ -186,6 +186,14 @@ body {
   text-align: left;
   margin-bottom: 20px;
 }
+.st0 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #d8453e;
+}
+.st1 {
+  fill: #393939;
+}
 
 .experiences__company-header-durability {
   color: var(--durability-text-color);
@@ -223,6 +231,9 @@ body {
 .experiences__company-project-responsibilities {
   color: var(--secondary-text-color);
   padding-left: 20px;
+}
+.experiences__company-project-icon {
+  margin-left: 10%;
 }
 
 .additional-info {
