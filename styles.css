@@ -362,3 +362,14 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
+
+.hidden_skills {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  color: #d8453e;
+}
+
+.hidden_skills:hover {
+  cursor: pointer;
+  opacity: 1;
+}
