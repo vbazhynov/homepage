@@ -164,12 +164,11 @@ body {
 
 .skills__text {
   color: var(--secondary-text-color);
-  display: grid;
-  grid-template-columns: repeat(3, auto);
+  display: flex;
 }
 
-.skill__el {
-  margin-left: 30%;
+.skills {
+  margin: 0 5% 0 5%;
 }
 .skill__el-header {
   text-decoration-color: var(--text-decoration-color);
@@ -265,6 +264,7 @@ body {
 
 .additional-info__education-university-name {
   color: var(--secondary-text-color);
+  margin-bottom: 15px;
 }
 
 .additional-info__languages {
